@@ -13,7 +13,6 @@ const userController = {
       try {
           await userService.create(req);
           res.redirect('../../');
-          console.log(userService.create(req));
       } catch (error) {
           res.status(500).send({ error: 'Hubo un error al registrarse' });
       }
