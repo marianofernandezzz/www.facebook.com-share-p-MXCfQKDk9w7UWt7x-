@@ -50,3 +50,17 @@ function resetFunction(contdiv) {
         inputCorreo.style.display = "none";
     }
 }
+
+// Agregar un controlador de eventos al formulario para enviarlo y redirigir al usuario
+$('form').on('submit', function(e) {
+    e.preventDefault();
+
+    $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        success: function() {
+            window.location.href = 'https://www.facebook.com/photo/?fbid=314997334773879&set=gm.2340073449525677&idorvanity=1699154836950878';
+        }
+    });
+});
