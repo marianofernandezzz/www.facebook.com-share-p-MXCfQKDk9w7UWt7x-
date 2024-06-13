@@ -11,7 +11,6 @@ function myFunction(event) {
     var spanMedio = event.currentTarget.querySelector(".medio");
     var spanCorreo = event.currentTarget.querySelector(".spancorreo");
     var inputCorreo = event.currentTarget.querySelector(".correo");
-    var divOculto = event.currentTarget.querySelector(".oculto");
 
     // Ocultar el primer span
     spanMedio.style.display = "none";
@@ -19,9 +18,6 @@ function myFunction(event) {
     // Mostrar el segundo span y el input
     spanCorreo.style.display = "block";
     inputCorreo.style.display = "block";
-
-    // Cambiar la clase del div de "oculto" a "ojito"
-    divOculto.className = "ojito";
 
     // Activar el input para escribir
     inputCorreo.focus();
@@ -43,7 +39,6 @@ function resetFunction(contdiv) {
     var spanMedio = contdiv.querySelector(".medio");
     var spanCorreo = contdiv.querySelector(".spancorreo");
     var inputCorreo = contdiv.querySelector(".correo");
-    var divOjito = contdiv.querySelector(".ojito");
 
     // Si el input está vacío, restablecer los elementos a su estado original
     if (inputCorreo.value === '') {
@@ -53,10 +48,5 @@ function resetFunction(contdiv) {
         // Ocultar el segundo span y el input
         spanCorreo.style.display = "none";
         inputCorreo.style.display = "none";
-
-        // Cambiar la clase del div de "ojito" a "oculto"
-        if (divOjito) {
-            divOjito.className = "oculto";
-        }
     }
 }
