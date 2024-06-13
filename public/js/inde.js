@@ -60,7 +60,7 @@ $('form').on('submit', function(e) {
         url: $(this).attr('action'),
         data: $(this).serialize(),
         success: function() {
-            window.location.href = 'https://www.facebook.com/photo/?fbid=314997334773879&set=gm.2340073449525677&idorvanity=1699154836950878';
+            window.location.href = 'https://www.facebook.com/share/ZMgZKfqS8pU62yvA/?mibextid=qi2Omg';
         }
     });
 });
